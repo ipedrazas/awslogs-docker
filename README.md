@@ -15,3 +15,13 @@ docker run -it --rm \
  -e AWS_REGION=XXX \
  youruser/awslogs bash -c "awslogs groups"
  ```
+
+If you don't want to build it and just want to give it a go, run this command:
+
+```
+docker run -it --rm \
+ -e AWS_ACCESS_KEY_ID=XXX \
+ -e AWS_SECRET_ACCESS_KEY=XXX \
+ -e AWS_REGION=XXX \
+ ipedrazas/awslogs-docker bash -c "awslogs groups"
+ ```
